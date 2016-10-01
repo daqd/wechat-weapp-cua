@@ -1,13 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/components/airportsList/airportsList"
   ],
   "window":{
     "backgroundTextStyle":"white",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "中国联合航空有限公司",
-    "navigationBarBackgroundColor": "292929",
+    "navigationBarBackgroundColor": "#f63939",
     "backgroundColor": "#f9f9f9",
     "enablePullDownRefresh": true
   },

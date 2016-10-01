@@ -24,20 +24,49 @@
         <view class="flight_query_main_wrap">
             <!-- Tab选项卡 -->
             <view class="tabs_wrap">
-                <view class="tabs_wrap_item single cur">单程</view>
-                <view class="tabs_wrap_item multiple">往返</view>
+                <view class="tabs_wrap_item single" data-flightType="single" style="background:{{isSingle?curBackgroundColor:normalBackgroundColor}};color:{{isSingle?curFrontColor:normalFrontColor}};border:1px solid {{isSingle?curBorderColor:normalBorderColr}}" bindtap="changeSingleMultiple">单程</view>
+                <view class="tabs_wrap_item multiple" data-flightType="multiple" style="background:{{isSingle?normalBackgroundColor:curBackgroundColor}};color:{{isSingle?normalFrontColor:curFrontColor}};border:1px solid {{isSingle?normalBorderColr:curBorderColor}}" bindtap="changeSingleMultiple">往返</view>
             </view>
             <!--出发到达 日期&目的地-->
             <view class="flight_choose_wrap">
-                <template is="flight_airport_date_wrap" data=""/>
+                <view class="flight_airport_date_wrap">
+                    <navigator url="../components/airportsList/airportsList">
+                        <view class="flight_airport_date_wrap_item" >
+                            <view class="item_name"> 出发城市 </view>
+                            <view class="item_val item_airport_val"> 北京南苑 </view>
+                        </view>
+                    </navigator>
+                    <view class="flight_airport_date_wrap_item">
+                        <view class="item_name"> 出发日期 </view>
+                        <view class="item_val item_date_val"> 2016/10/3 </view>
+                    </view>
+                </view>
                 <view class="change_airport_wrap"></view>
-                <template is="flight_airport_date_wrap" data=""/>
+                <view class="flight_airport_date_wrap">
+                    <view class="flight_airport_date_wrap_item">
+                        <view class="item_name"> 到达城市 </view>
+                        <view class="item_val item_airport_val"> 北京南苑 </view>
+                    </view>
+                    <view wx:if="{{!isSingle}}" class="flight_airport_date_wrap_item">
+                        <view class="item_name"> 到达日期 </view>
+                        <view class="item_val item_date_val"> 2016/10/3 </view>
+                    </view>
+                </view>
             </view>
             <!--乘机人数量选择-->
             <view class="passenger_count_wrap">
-                <template is="passenger_count_wrap" date=""></template>
-                <template is="passenger_count_wrap" date=""></template>
-                <template is="passenger_count_wrap" date=""></template>
+                <view class="passenger_count_item" data-passengertype="adultCount" bindtap="actionSheetTap">
+                    <view class="passenger_count_name">成人</view>
+                    <view class="passenger_count_val adult_icon">{{adultCount}}</view>
+                </view>
+                <view class="passenger_count_item" data-passengertype="childCount" bindtap="actionSheetTap">
+                    <view class="passenger_count_name">儿童</view>
+                    <view class="passenger_count_val child_icon">{{childCount}}</view>
+                </view>
+                <view class="passenger_count_item" data-passengertype="babyCount" bindtap="actionSheetTap">
+                    <view class="passenger_count_name">婴儿</view>
+                    <view class="passenger_count_val baby_icon">{{babyCount}}</view>
+                </view>
             </view>
             <!-- 查询按钮 -->
             <view class="submit_btn_wrap">
@@ -48,36 +77,37 @@
 
 <!-- 首页模块入口-->
     <view class="module_wrap">
-        <template is="module_entry_wrap" date=""></template>
-        <template is="module_entry_wrap" date=""></template>
-        <template is="module_entry_wrap" date=""></template>
-        <template is="module_entry_wrap" date=""></template>
+        <template is="module_entry_wrap" data="{{...moduleEntry.mycua}}"/>
+        <template is="module_entry_wrap" data="{{...moduleEntry.book}}"/>
+        <template is="module_entry_wrap" data="{{...moduleEntry.addservice}}"/>
+        <template is="module_entry_wrap" data="{{...moduleEntry.lovetravel}}"/>
+        <template is="module_entry_wrap" data="{{...moduleEntry.dynamic}}"/>
     </view>
 
 <!----------页面所用模板----------->
-    <template name="flight_airport_date_wrap">
-        <view class="flight_airport_date_wrap">
-            <view class="flight_airport_date_wrap_item">
-                <view class="item_name"> 出发城市 </view>
-                <view class="item_val item_airport_val"> 北京南苑 </view>
-            </view>
-            <view class="flight_airport_date_wrap_item">
-                <view class="item_name"> 出发日期 </view>
-                <view class="item_val item_date_val"> 2016/10/3 </view>
-            </view>
-        </view>
-    </template>
-
     <template name="passenger_count_wrap">
-        <view class="passenger_count_item">
-            <view class="passenger_count_name">成人</view>
-            <view class="passenger_count_val">3</view>
+        <view class="passenger_count_item" data-passengertype="{{passengerType}}" bindtap="actionSheetTap">
+            <view class="passenger_count_name">{{passengerCN}}</view>
+            <view class="passenger_count_val {{passengerIcon}}">{{passengerCount}}</view>
         </view>
     </template>
 
     <template name="module_entry_wrap">
         <view class="module_entry_item">
-            <view class="module_entey_iterm_img"></view>
-            <view class="module_entey_iterm_name">我的联航</view>
+            <view class="module_entey_iterm_img {{moudleClassName}}"></view>
+            <view class="module_entey_iterm_name">{{moudleNameZH}}</view>
         </view>
     </template>
+
+    <!-- 乘机人选择数量 -->
+    <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:for="{{actionSheetItems}}">
+            <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet>
+
+    <!-- loading -->
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>

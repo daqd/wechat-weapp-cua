@@ -133,8 +133,18 @@
   height: 45px;
   float: left;
 }
-
-
+.adult_icon{
+   background:url("../../images/home/adult.png") no-repeat center center;
+   background-size:20px; 
+}
+.child_icon{
+   background:url("../../images/home/child.png") no-repeat center center;
+   background-size:20px; 
+}
+.baby_icon{
+   background:url("../../images/home/baby.png") no-repeat center center;
+   background-size:20px;   
+}
 .submit_btn_wrap{
   float: left;
   width: 100%;
@@ -150,9 +160,9 @@
 /** 首页模块入口 **/
 .module_wrap{
   position:relative;
-  top:-600px;
+  top:-630px;
   width: 704rpx;
-  height: 120px;
+  height: 240px;
   margin: 0 auto;
 }
 .module_entry_item{
@@ -164,8 +174,6 @@
   width: 100%;
   height: 90px;
   float: left;
-  background: url("../../images/home/main_my.png") no-repeat center center;
-  background-size:60px;
 }
 .module_entey_iterm_name{
   width: 100%;
@@ -174,4 +182,24 @@
   float: left;
   text-align: center;
   font-size: 16px;
+}
+.mycua{
+    background: url("../../images/home/main_my.png") no-repeat center center;
+    background-size:60px;
+}
+.book{
+    background: url("../../images/home/main_order.png") no-repeat center center;
+    background-size:60px;
+}
+.addService{
+    background: url("../../images/home/main_service.png") no-repeat center center;
+    background-size:60px;
+}
+.dynamic{
+    background: url("../../images/home/main_flight_dynamic.png") no-repeat center center;
+    background-size:60px; 
+}
+.lovetravel{
+    background: url("../../images/home/main_travel.png") no-repeat center center;
+    background-size:60px;
 }

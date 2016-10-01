@@ -1,0 +1,157 @@
+<!-- 后期待优化，妹的，不能循环对象 -->
+<view class="airportItemPinyin"> A</view>
+<block wx:for="{{airportList.A}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> B</view>
+<block wx:for="{{airportList.B}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> C</view>
+<block wx:for="{{airportList.C}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> D</view>
+<block wx:for="{{airportList.D}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> E</view>
+<block wx:for="{{airportList.E}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> F</view>
+<block wx:for="{{airportList.F}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> G</view>
+<block wx:for="{{airportList.G}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> H</view>
+<block wx:for="{{airportList.H}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> I</view>
+<block wx:for="{{airportList.I}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> G</view>
+<block wx:for="{{airportList.G}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> K</view>
+<block wx:for="{{airportList.K}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> L</view>
+<block wx:for="{{airportList.L}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> M</view>
+<block wx:for="{{airportList.M}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> N</view>
+<block wx:for="{{airportList.N}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> O</view>
+<block wx:for="{{airportList.O}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> P</view>
+<block wx:for="{{airportList.P}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> Q</view>
+<block wx:for="{{airportList.Q}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> R</view>
+<block wx:for="{{airportList.R}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> S</view>
+<block wx:for="{{airportList.S}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> T</view>
+<block wx:for="{{airportList.T}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> U</view>
+<block wx:for="{{airportList.U}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> V</view>
+<block wx:for="{{airportList.V}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> W</view>
+<block wx:for="{{airportList.W}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> X</view>
+<block wx:for="{{airportList.X}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> Y</view>
+<block wx:for="{{airportList.Y}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>
+<view class="airportItemPinyin"> Z</view>
+<block wx:for="{{airportList.Z}}">
+    <view class="airportItem" data-citycode="{{item.cityCode}}">
+        {{item.airportName}}
+    </view>
+</block>

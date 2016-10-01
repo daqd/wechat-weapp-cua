@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle":"#f63939",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "城市列表",
+    "navigationBarBackgroundColor": "#f63939",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+}

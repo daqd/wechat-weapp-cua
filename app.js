@@ -25,6 +25,8 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    userInfo:null,
+    orgCity:'北京南苑',
+    dstCity:'上海虹桥'
   }
 })
