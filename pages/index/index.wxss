@@ -1,0 +1,177 @@
+/**index.wxss**/
+/** 1.04 **/
+.swiper_box{
+  height:800rpx;
+}
+.slider_wrap{
+  display: block;
+  position:relative;
+  width: 750rpx;
+  height: 800rpx;
+}
+.slide-image{
+  width:750rpx;
+  height:800rpx;
+}
+
+/** 航班查询区域透明背景 **/
+.flight_query_wrap{
+  display: block;
+  position: relative;
+  top: -300px;
+  width:704rpx;
+  height:353px;
+  background: #e7e7e7;
+  filter: Alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  z-index: 0;
+  margin:0 auto;
+
+}
+
+.flight_query_content{
+  display: block;
+  position: relative;
+  top: -653px;
+  width:704rpx;
+  height:532rpx;
+  margin:0 auto;
+}
+
+.flycua_logo_wrap{
+  width: 100%;
+  height: 50px;
+  background: #CCC url("../../images/common/logo.png") no-repeat center center;
+  background-size:150px;
+}
+
+.flight_query_main_wrap{
+  width: 624rpx;
+  height: 280px;
+  margin:0 auto;
+}
+
+.tabs_wrap{
+  width: 624rpx;
+  height: 45px;
+}
+.tabs_wrap_item{
+  width: 307rpx;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  float: left;
+  background:#e7e7e7;
+  border: 1px solid #999;
+}
+.cur{
+  background: #f63939;
+  border: 1px solid #f63939;
+  color:#FFF;
+}
+
+.flight_choose_wrap{
+  width: 624rpx;
+  height: 90px;
+  margin-top:20px;
+}
+.flight_airport_date_wrap{
+  width: 250rpx;
+  height: 90px;
+  float: left;
+}
+.flight_airport_date_wrap_item{
+  width: 250rpx;
+  height: 45px;
+  float: left;
+}
+.item_name{
+  width: 125rpx;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  float: left;
+}
+.item_val{
+  width: 125rpx;
+  height: 45px;
+  line-height: 45px;
+  float: left;
+  font-size: 14px;
+}
+.change_airport_wrap{
+  width: 124rpx;
+  height: 90px;
+  float: left;
+  background: url("../../images/common/addr_change.png") no-repeat center center;
+  background-size:40px;
+}
+
+/** 乘机人数量选择 **/
+.passenger_count_wrap{
+  width: 624rpx;
+  height: 45px;
+  float: left;
+  line-height: 45px;
+  margin-top:10px;
+  border-top:1px solid #c9c9c9;
+  border-bottom:1px solid #c9c9c9;
+}
+.passenger_count_item{
+  width: 208rpx;
+  height: 45px;
+  float: left;
+}
+.passenger_count_name{
+  width: 80rpx;
+  height: 45px;
+  float:left;
+}
+.passenger_count_val{
+  width: 128rpx;
+  height: 45px;
+  float: left;
+}
+
+
+.submit_btn_wrap{
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top:20px;
+}
+.submit_btn{
+  background:#f63939;
+  color: #FFF;
+}
+
+
+/** 首页模块入口 **/
+.module_wrap{
+  position:relative;
+  top:-600px;
+  width: 704rpx;
+  height: 120px;
+  margin: 0 auto;
+}
+.module_entry_item{
+  width:25%;
+  height: 120px;
+  float: left;
+}
+.module_entey_iterm_img{
+  width: 100%;
+  height: 90px;
+  float: left;
+  background: url("../../images/home/main_my.png") no-repeat center center;
+  background-size:60px;
+}
+.module_entey_iterm_name{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+}

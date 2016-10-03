@@ -1,0 +1,10 @@
+{
+    "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "中国联行",
+    "navigationBarBackgroundColor": "292929",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  }
+}

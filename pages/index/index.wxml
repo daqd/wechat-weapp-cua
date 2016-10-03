@@ -1,0 +1,83 @@
+<!-- 轮播 -->
+<view class="slider_wrap">
+    <swiper class="swiper_box" indicator-dots="{{slider.indicatorDots}}" vertical="{{slider.vertical}}"
+            autoplay="{{slider.autoplay}}" interval="{{slider.interval}}" duration="{{slider.duration}}">
+        <block wx:for="{{slider.imgurl}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<!-- 航班查询区域 -->
+
+    <!-- 透明背景层 -->
+    <view class="flight_query_wrap"></view>
+    <!-- 航班查询区域内容 -->
+    <view class="flight_query_content">
+        <!-- 首页banner下LOGO -->
+        <view class="flycua_logo_wrap">
+
+        </view>
+        <!-- 航班查询功能区域 -->
+        <view class="flight_query_main_wrap">
+            <!-- Tab选项卡 -->
+            <view class="tabs_wrap">
+                <view class="tabs_wrap_item single cur">单程</view>
+                <view class="tabs_wrap_item multiple">往返</view>
+            </view>
+            <!--出发到达 日期&目的地-->
+            <view class="flight_choose_wrap">
+                <template is="flight_airport_date_wrap" data=""/>
+                <view class="change_airport_wrap"></view>
+                <template is="flight_airport_date_wrap" data=""/>
+            </view>
+            <!--乘机人数量选择-->
+            <view class="passenger_count_wrap">
+                <template is="passenger_count_wrap" date=""></template>
+                <template is="passenger_count_wrap" date=""></template>
+                <template is="passenger_count_wrap" date=""></template>
+            </view>
+            <!-- 查询按钮 -->
+            <view class="submit_btn_wrap">
+                <button size="default" class="submit_btn">航班查询</button>
+            </view>
+        </view>
+    </view>
+
+<!-- 首页模块入口-->
+    <view class="module_wrap">
+        <template is="module_entry_wrap" date=""></template>
+        <template is="module_entry_wrap" date=""></template>
+        <template is="module_entry_wrap" date=""></template>
+        <template is="module_entry_wrap" date=""></template>
+    </view>
+
+<!----------页面所用模板----------->
+    <template name="flight_airport_date_wrap">
+        <view class="flight_airport_date_wrap">
+            <view class="flight_airport_date_wrap_item">
+                <view class="item_name"> 出发城市 </view>
+                <view class="item_val item_airport_val"> 北京南苑 </view>
+            </view>
+            <view class="flight_airport_date_wrap_item">
+                <view class="item_name"> 出发日期 </view>
+                <view class="item_val item_date_val"> 2016/10/3 </view>
+            </view>
+        </view>
+    </template>
+
+    <template name="passenger_count_wrap">
+        <view class="passenger_count_item">
+            <view class="passenger_count_name">成人</view>
+            <view class="passenger_count_val">3</view>
+        </view>
+    </template>
+
+    <template name="module_entry_wrap">
+        <view class="module_entry_item">
+            <view class="module_entey_iterm_img"></view>
+            <view class="module_entey_iterm_name">我的联航</view>
+        </view>
+    </template>
